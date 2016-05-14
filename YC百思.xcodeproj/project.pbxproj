@@ -7,24 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05DC40B01CDDC29300E24CDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DC40AF1CDDC29300E24CDA /* main.m */; };
-		05DC40B31CDDC29300E24CDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DC40B21CDDC29300E24CDA /* AppDelegate.m */; };
-		05DC40B61CDDC29300E24CDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DC40B51CDDC29300E24CDA /* ViewController.m */; };
-		05DC40B91CDDC29300E24CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DC40B71CDDC29300E24CDA /* Main.storyboard */; };
+		053E05C71CE4D2180090E949 /* YCEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05A21CE4D2180090E949 /* YCEssenceViewController.m */; };
+		053E05C81CE4D2180090E949 /* YCFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05A81CE4D2180090E949 /* YCFriendTrendsViewController.m */; };
+		053E05C91CE4D2180090E949 /* YCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05AE1CE4D2180090E949 /* YCMeViewController.m */; };
+		053E05CA1CE4D2180090E949 /* YCNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05B41CE4D2180090E949 /* YCNewViewController.m */; };
+		053E05CB1CE4D2180090E949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05B91CE4D2180090E949 /* AppDelegate.m */; };
+		053E05CC1CE4D2180090E949 /* UIBarButtonItem+YCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05BC1CE4D2180090E949 /* UIBarButtonItem+YCExtension.m */; };
+		053E05CD1CE4D2180090E949 /* UIView+YCExtensiom.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05BE1CE4D2180090E949 /* UIView+YCExtensiom.m */; };
+		053E05CE1CE4D2180090E949 /* YCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05C11CE4D2180090E949 /* YCTabBarController.m */; };
+		053E05CF1CE4D2180090E949 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05C21CE4D2180090E949 /* main.m */; };
+		053E05D01CE4D2180090E949 /* YCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 053E05C61CE4D2180090E949 /* YCTabBar.m */; };
+		058517DE1CE6D9CD00594648 /* YCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058517DD1CE6D9CD00594648 /* YCNavigationController.m */; };
+		058517E31CE7017600594648 /* YCFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 058517E21CE7017600594648 /* YCFriendTrendsViewController.xib */; };
 		05DC40BB1CDDC29300E24CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05DC40BA1CDDC29300E24CDA /* Assets.xcassets */; };
-		05DC40BE1CDDC29300E24CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DC40BC1CDDC29300E24CDA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053E05A11CE4D2180090E949 /* YCEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCEssenceViewController.h; sourceTree = "<group>"; };
+		053E05A21CE4D2180090E949 /* YCEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCEssenceViewController.m; sourceTree = "<group>"; };
+		053E05A71CE4D2180090E949 /* YCFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFriendTrendsViewController.h; sourceTree = "<group>"; };
+		053E05A81CE4D2180090E949 /* YCFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFriendTrendsViewController.m; sourceTree = "<group>"; };
+		053E05AD1CE4D2180090E949 /* YCMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMeViewController.h; sourceTree = "<group>"; };
+		053E05AE1CE4D2180090E949 /* YCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMeViewController.m; sourceTree = "<group>"; };
+		053E05B31CE4D2180090E949 /* YCNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNewViewController.h; sourceTree = "<group>"; };
+		053E05B41CE4D2180090E949 /* YCNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNewViewController.m; sourceTree = "<group>"; };
+		053E05B81CE4D2180090E949 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		053E05B91CE4D2180090E949 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		053E05BB1CE4D2180090E949 /* UIBarButtonItem+YCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YCExtension.h"; sourceTree = "<group>"; };
+		053E05BC1CE4D2180090E949 /* UIBarButtonItem+YCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YCExtension.m"; sourceTree = "<group>"; };
+		053E05BD1CE4D2180090E949 /* UIView+YCExtensiom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YCExtensiom.h"; sourceTree = "<group>"; };
+		053E05BE1CE4D2180090E949 /* UIView+YCExtensiom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YCExtensiom.m"; sourceTree = "<group>"; };
+		053E05C01CE4D2180090E949 /* YCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabBarController.h; sourceTree = "<group>"; };
+		053E05C11CE4D2180090E949 /* YCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTabBarController.m; sourceTree = "<group>"; };
+		053E05C21CE4D2180090E949 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		053E05C31CE4D2180090E949 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		053E05C51CE4D2180090E949 /* YCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabBar.h; sourceTree = "<group>"; };
+		053E05C61CE4D2180090E949 /* YCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTabBar.m; sourceTree = "<group>"; };
+		058517DC1CE6D9CD00594648 /* YCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNavigationController.h; sourceTree = "<group>"; };
+		058517DD1CE6D9CD00594648 /* YCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNavigationController.m; sourceTree = "<group>"; };
+		058517E21CE7017600594648 /* YCFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		05DC40AB1CDDC29300E24CDA /* YC百思.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YC百思.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05DC40AF1CDDC29300E24CDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05DC40B11CDDC29300E24CDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		05DC40B21CDDC29300E24CDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		05DC40B41CDDC29300E24CDA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		05DC40B51CDDC29300E24CDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		05DC40B81CDDC29300E24CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05DC40BA1CDDC29300E24CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		05DC40BD1CDDC29300E24CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05DC40BF1CDDC29300E24CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +62,196 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053E059E1CE4D2180090E949 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				053E059F1CE4D2180090E949 /* Essence-精华 */,
+				053E05B11CE4D2180090E949 /* Ness-新帖 */,
+				053E05A51CE4D2180090E949 /* FriendTrends-关注 */,
+				053E05AB1CE4D2180090E949 /* Me-我的 */,
+				053E05B71CE4D2180090E949 /* Other-其它 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		053E059F1CE4D2180090E949 /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				053E05A01CE4D2180090E949 /* Controller */,
+				053E05A31CE4D2180090E949 /* Model */,
+				053E05A41CE4D2180090E949 /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		053E05A01CE4D2180090E949 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				053E05A11CE4D2180090E949 /* YCEssenceViewController.h */,
+				053E05A21CE4D2180090E949 /* YCEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		053E05A31CE4D2180090E949 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		053E05A41CE4D2180090E949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		053E05A51CE4D2180090E949 /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				053E05A61CE4D2180090E949 /* Controller */,
+				053E05A91CE4D2180090E949 /* Model */,
+				053E05AA1CE4D2180090E949 /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		053E05A61CE4D2180090E949 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				053E05A71CE4D2180090E949 /* YCFriendTrendsViewController.h */,
+				053E05A81CE4D2180090E949 /* YCFriendTrendsViewController.m */,
+				058517E21CE7017600594648 /* YCFriendTrendsViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		053E05A91CE4D2180090E949 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		053E05AA1CE4D2180090E949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		053E05AB1CE4D2180090E949 /* Me-我的 */ = {
+			isa = PBXGroup;
+			children = (
+				053E05AC1CE4D2180090E949 /* Controller */,
+				053E05AF1CE4D2180090E949 /* Model */,
+				053E05B01CE4D2180090E949 /* View */,
+			);
+			path = "Me-我的";
+			sourceTree = "<group>";
+		};
+		053E05AC1CE4D2180090E949 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				053E05AD1CE4D2180090E949 /* YCMeViewController.h */,
+				053E05AE1CE4D2180090E949 /* YCMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		053E05AF1CE4D2180090E949 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		053E05B01CE4D2180090E949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		053E05B11CE4D2180090E949 /* Ness-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				053E05B21CE4D2180090E949 /* Controller */,
+				053E05B51CE4D2180090E949 /* Model */,
+				053E05B61CE4D2180090E949 /* View */,
+			);
+			path = "Ness-新帖";
+			sourceTree = "<group>";
+		};
+		053E05B21CE4D2180090E949 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				053E05B31CE4D2180090E949 /* YCNewViewController.h */,
+				053E05B41CE4D2180090E949 /* YCNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		053E05B51CE4D2180090E949 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		053E05B61CE4D2180090E949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		053E05B71CE4D2180090E949 /* Other-其它 */ = {
+			isa = PBXGroup;
+			children = (
+				053E05BA1CE4D2180090E949 /* Category */,
+				053E05BF1CE4D2180090E949 /* Controller */,
+				053E05C41CE4D2180090E949 /* View */,
+				053E05B81CE4D2180090E949 /* AppDelegate.h */,
+				053E05B91CE4D2180090E949 /* AppDelegate.m */,
+				053E05C21CE4D2180090E949 /* main.m */,
+				053E05C31CE4D2180090E949 /* PrefixHeader.pch */,
+			);
+			path = "Other-其它";
+			sourceTree = "<group>";
+		};
+		053E05BA1CE4D2180090E949 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				053E05BB1CE4D2180090E949 /* UIBarButtonItem+YCExtension.h */,
+				053E05BC1CE4D2180090E949 /* UIBarButtonItem+YCExtension.m */,
+				053E05BD1CE4D2180090E949 /* UIView+YCExtensiom.h */,
+				053E05BE1CE4D2180090E949 /* UIView+YCExtensiom.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		053E05BF1CE4D2180090E949 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				053E05C01CE4D2180090E949 /* YCTabBarController.h */,
+				053E05C11CE4D2180090E949 /* YCTabBarController.m */,
+				058517DC1CE6D9CD00594648 /* YCNavigationController.h */,
+				058517DD1CE6D9CD00594648 /* YCNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		053E05C41CE4D2180090E949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				053E05C51CE4D2180090E949 /* YCTabBar.h */,
+				053E05C61CE4D2180090E949 /* YCTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		05DC40A21CDDC29300E24CDA = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +271,7 @@
 		05DC40AD1CDDC29300E24CDA /* YC百思 */ = {
 			isa = PBXGroup;
 			children = (
-				05DC40B11CDDC29300E24CDA /* AppDelegate.h */,
-				05DC40B21CDDC29300E24CDA /* AppDelegate.m */,
-				05DC40B41CDDC29300E24CDA /* ViewController.h */,
-				05DC40B51CDDC29300E24CDA /* ViewController.m */,
-				05DC40B71CDDC29300E24CDA /* Main.storyboard */,
-				05DC40BA1CDDC29300E24CDA /* Assets.xcassets */,
-				05DC40BC1CDDC29300E24CDA /* LaunchScreen.storyboard */,
-				05DC40BF1CDDC29300E24CDA /* Info.plist */,
+				053E059E1CE4D2180090E949 /* Classes */,
 				05DC40AE1CDDC29300E24CDA /* Supporting Files */,
 			);
 			path = "YC百思";
@@ -74,7 +280,8 @@
 		05DC40AE1CDDC29300E24CDA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				05DC40AF1CDDC29300E24CDA /* main.m */,
+				05DC40BA1CDDC29300E24CDA /* Assets.xcassets */,
+				05DC40BF1CDDC29300E24CDA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -105,6 +312,7 @@
 		05DC40A31CDDC29300E24CDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YC;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = renyihcun;
 				TargetAttributes = {
@@ -136,9 +344,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DC40BE1CDDC29300E24CDA /* LaunchScreen.storyboard in Resources */,
+				058517E31CE7017600594648 /* YCFriendTrendsViewController.xib in Resources */,
 				05DC40BB1CDDC29300E24CDA /* Assets.xcassets in Resources */,
-				05DC40B91CDDC29300E24CDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,32 +356,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DC40B61CDDC29300E24CDA /* ViewController.m in Sources */,
-				05DC40B31CDDC29300E24CDA /* AppDelegate.m in Sources */,
-				05DC40B01CDDC29300E24CDA /* main.m in Sources */,
+				058517DE1CE6D9CD00594648 /* YCNavigationController.m in Sources */,
+				053E05C81CE4D2180090E949 /* YCFriendTrendsViewController.m in Sources */,
+				053E05CA1CE4D2180090E949 /* YCNewViewController.m in Sources */,
+				053E05C91CE4D2180090E949 /* YCMeViewController.m in Sources */,
+				053E05CE1CE4D2180090E949 /* YCTabBarController.m in Sources */,
+				053E05C71CE4D2180090E949 /* YCEssenceViewController.m in Sources */,
+				053E05CC1CE4D2180090E949 /* UIBarButtonItem+YCExtension.m in Sources */,
+				053E05CD1CE4D2180090E949 /* UIView+YCExtensiom.m in Sources */,
+				053E05CF1CE4D2180090E949 /* main.m in Sources */,
+				053E05CB1CE4D2180090E949 /* AppDelegate.m in Sources */,
+				053E05D01CE4D2180090E949 /* YCTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		05DC40B71CDDC29300E24CDA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05DC40B81CDDC29300E24CDA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		05DC40BC1CDDC29300E24CDA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05DC40BD1CDDC29300E24CDA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		05DC40C01CDDC29300E24CDA /* Debug */ = {
@@ -261,7 +457,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "YC百思/Classes/Other-其它/PrefixHeader.pch";
 				INFOPLIST_FILE = "YC百思/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.renyichun.YC--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +471,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "YC百思/Classes/Other-其它/PrefixHeader.pch";
 				INFOPLIST_FILE = "YC百思/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.renyichun.YC--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +500,7 @@
 				05DC40C41CDDC29300E24CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
