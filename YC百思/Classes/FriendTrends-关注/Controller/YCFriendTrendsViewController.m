@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    YCLogFunc;
     
     // 设置导航栏的内容
     self.navigationItem.title = @"我的关注";
