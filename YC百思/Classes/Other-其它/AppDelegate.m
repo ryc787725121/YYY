@@ -32,6 +32,8 @@
     YCLog(@"%@",[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]);
     
     
+    YCLog(@"8434838347854738534583247532047592347580234975093");
+    
     YCPushGuideView *guideView = [YCPushGuideView guideView];
     guideView.frame = self.window.bounds;
     [self.window addSubview:guideView];
