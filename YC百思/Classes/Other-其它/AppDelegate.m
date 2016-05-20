@@ -27,6 +27,8 @@
     // 显示窗口
     [self.window makeKeyAndVisible];
     
+    NSLog(@"ASDF就爱看积分ASA");
+    
     // 显示引导图
     
     YCLog(@"%@",[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]);
