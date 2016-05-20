@@ -7,7 +7,8 @@
 //
 
 #import "YCFriendTrendsViewController.h"
-
+#import "YCRecommendViewController.h"
+#import "YCLoginRegisterController.h"
 @interface YCFriendTrendsViewController ()
 
 @end
@@ -16,8 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    YCLogFunc;
-    
     // 设置导航栏的内容
     self.navigationItem.title = @"我的关注";
     
@@ -28,7 +27,19 @@
     self.view.backgroundColor = YCGlobalBg;
 }
 - (void)friendButtonClick {
-    YCLogFunc;
+
+    YCRecommendViewController *vc = [[YCRecommendViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+#pragma mark --- 登陆注册事件
+- (IBAction)loginRegister {
+    
+    YCLoginRegisterController *login = [[YCLoginRegisterController alloc] init];
+    [self presentViewController:login animated:YES completion:nil];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

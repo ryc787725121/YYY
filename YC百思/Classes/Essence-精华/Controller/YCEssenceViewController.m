@@ -7,7 +7,7 @@
 //
 
 #import "YCEssenceViewController.h"
-
+#import "YCRecommendTagsViewController.h"
 @interface YCEssenceViewController ()
 
 @end
@@ -28,7 +28,9 @@
 }
 
 - (void)essenceButtonClick {
-    YCLogFunc;
+    YCRecommendTagsViewController *tagsVC = [[YCRecommendTagsViewController alloc] init];
+    [self.navigationController pushViewController:tagsVC animated:YES];
+    
 }
 
 

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YCTabBarController.h"
+#import "YCPushGuideView.h"
 @interface AppDelegate ()
 
 @end
@@ -25,6 +26,17 @@
     
     // 显示窗口
     [self.window makeKeyAndVisible];
+    
+    // 显示引导图
+    
+    YCLog(@"%@",[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]);
+    
+    
+    YCPushGuideView *guideView = [YCPushGuideView guideView];
+    guideView.frame = self.window.bounds;
+    [self.window addSubview:guideView];
+    
+    
     return YES;
 }
 
