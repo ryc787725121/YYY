@@ -27,16 +27,14 @@
     // 显示窗口
     [self.window makeKeyAndVisible];
     
-    NSLog(@"ASDF就爱看积分ASA");
-    
     // 显示引导图
     
     YCLog(@"%@",[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]);
     
     
-    YCPushGuideView *guideView = [YCPushGuideView guideView];
-    guideView.frame = self.window.bounds;
-    [self.window addSubview:guideView];
+    
+    // 显示推送引导
+    [YCPushGuideView show];
     
     
     return YES;

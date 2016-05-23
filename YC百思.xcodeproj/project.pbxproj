@@ -118,6 +118,16 @@
 		0596D5941CE738060020FD32 /* YCRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0596D5921CE738060020FD32 /* YCRecommendUserCell.m */; };
 		0596D5951CE738060020FD32 /* YCRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0596D5931CE738060020FD32 /* YCRecommendUserCell.xib */; };
 		0596D5981CE73C6F0020FD32 /* YCRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0596D5971CE73C6F0020FD32 /* YCRecommendUser.m */; };
+		05A38D111CF332EC005774CA /* XMGAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D081CF332EC005774CA /* XMGAllViewController.m */; };
+		05A38D121CF332EC005774CA /* XMGPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D0A1CF332EC005774CA /* XMGPictureViewController.m */; };
+		05A38D131CF332EC005774CA /* XMGVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D0C1CF332EC005774CA /* XMGVideoViewController.m */; };
+		05A38D141CF332EC005774CA /* XMGVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D0E1CF332EC005774CA /* XMGVoiceViewController.m */; };
+		05A38D151CF332EC005774CA /* XMGWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D101CF332EC005774CA /* XMGWordViewController.m */; };
+		05A38D181CF33536005774CA /* XMGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D171CF33536005774CA /* XMGConst.m */; };
+		05A38D1B1CF33636005774CA /* XMGTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D1A1CF33636005774CA /* XMGTopic.m */; };
+		05A38D1F1CF33674005774CA /* XMGTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D1D1CF33674005774CA /* XMGTopicCell.m */; };
+		05A38D201CF33674005774CA /* XMGTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A38D1E1CF33674005774CA /* XMGTopicCell.xib */; };
+		05A38D231CF3373D005774CA /* NSDate+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A38D221CF3373D005774CA /* NSDate+XMGExtension.m */; };
 		05DC40BB1CDDC29300E24CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05DC40BA1CDDC29300E24CDA /* Assets.xcassets */; };
 		05F725E71CEB65970022C73F /* YCLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F725E51CEB65970022C73F /* YCLoginRegisterController.m */; };
 		05F725E81CEB65970022C73F /* YCLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F725E61CEB65970022C73F /* YCLoginRegisterController.xib */; };
@@ -335,6 +345,25 @@
 		0596D5931CE738060020FD32 /* YCRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCRecommendUserCell.xib; sourceTree = "<group>"; };
 		0596D5961CE73C6F0020FD32 /* YCRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCRecommendUser.h; sourceTree = "<group>"; };
 		0596D5971CE73C6F0020FD32 /* YCRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRecommendUser.m; sourceTree = "<group>"; };
+		05A38D071CF332EC005774CA /* XMGAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAllViewController.h; sourceTree = "<group>"; };
+		05A38D081CF332EC005774CA /* XMGAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAllViewController.m; sourceTree = "<group>"; };
+		05A38D091CF332EC005774CA /* XMGPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPictureViewController.h; sourceTree = "<group>"; };
+		05A38D0A1CF332EC005774CA /* XMGPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPictureViewController.m; sourceTree = "<group>"; };
+		05A38D0B1CF332EC005774CA /* XMGVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGVideoViewController.h; sourceTree = "<group>"; };
+		05A38D0C1CF332EC005774CA /* XMGVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGVideoViewController.m; sourceTree = "<group>"; };
+		05A38D0D1CF332EC005774CA /* XMGVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGVoiceViewController.h; sourceTree = "<group>"; };
+		05A38D0E1CF332EC005774CA /* XMGVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGVoiceViewController.m; sourceTree = "<group>"; };
+		05A38D0F1CF332EC005774CA /* XMGWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGWordViewController.h; sourceTree = "<group>"; };
+		05A38D101CF332EC005774CA /* XMGWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGWordViewController.m; sourceTree = "<group>"; };
+		05A38D161CF33536005774CA /* XMGConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMGConst.h; path = ../../../XMGConst.h; sourceTree = "<group>"; };
+		05A38D171CF33536005774CA /* XMGConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMGConst.m; path = ../../../XMGConst.m; sourceTree = "<group>"; };
+		05A38D191CF33636005774CA /* XMGTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopic.h; sourceTree = "<group>"; };
+		05A38D1A1CF33636005774CA /* XMGTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopic.m; sourceTree = "<group>"; };
+		05A38D1C1CF33674005774CA /* XMGTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicCell.h; sourceTree = "<group>"; };
+		05A38D1D1CF33674005774CA /* XMGTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicCell.m; sourceTree = "<group>"; };
+		05A38D1E1CF33674005774CA /* XMGTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicCell.xib; sourceTree = "<group>"; };
+		05A38D211CF3373D005774CA /* NSDate+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XMGExtension.h"; sourceTree = "<group>"; };
+		05A38D221CF3373D005774CA /* NSDate+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XMGExtension.m"; sourceTree = "<group>"; };
 		05DC40AB1CDDC29300E24CDA /* YC百思.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YC百思.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05DC40BA1CDDC29300E24CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05DC40BF1CDDC29300E24CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -386,6 +415,16 @@
 				053E05A21CE4D2180090E949 /* YCEssenceViewController.m */,
 				051B03FD1CE892D2000461DF /* YCRecommendTagsViewController.h */,
 				051B03FE1CE892D2000461DF /* YCRecommendTagsViewController.m */,
+				05A38D071CF332EC005774CA /* XMGAllViewController.h */,
+				05A38D081CF332EC005774CA /* XMGAllViewController.m */,
+				05A38D091CF332EC005774CA /* XMGPictureViewController.h */,
+				05A38D0A1CF332EC005774CA /* XMGPictureViewController.m */,
+				05A38D0B1CF332EC005774CA /* XMGVideoViewController.h */,
+				05A38D0C1CF332EC005774CA /* XMGVideoViewController.m */,
+				05A38D0D1CF332EC005774CA /* XMGVoiceViewController.h */,
+				05A38D0E1CF332EC005774CA /* XMGVoiceViewController.m */,
+				05A38D0F1CF332EC005774CA /* XMGWordViewController.h */,
+				05A38D101CF332EC005774CA /* XMGWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,6 +434,8 @@
 			children = (
 				051B04001CE894E9000461DF /* YCRecommendTag.h */,
 				051B04011CE894E9000461DF /* YCRecommendTag.m */,
+				05A38D191CF33636005774CA /* XMGTopic.h */,
+				05A38D1A1CF33636005774CA /* XMGTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +446,9 @@
 				051B04081CE89674000461DF /* YCRecommendTagCell.h */,
 				051B04091CE89674000461DF /* YCRecommendTagCell.m */,
 				051B040A1CE89674000461DF /* YCRecommendTagCell.xib */,
+				05A38D1C1CF33674005774CA /* XMGTopicCell.h */,
+				05A38D1D1CF33674005774CA /* XMGTopicCell.m */,
+				05A38D1E1CF33674005774CA /* XMGTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -540,6 +584,8 @@
 				053E05B91CE4D2180090E949 /* AppDelegate.m */,
 				053E05C21CE4D2180090E949 /* main.m */,
 				053E05C31CE4D2180090E949 /* PrefixHeader.pch */,
+				05A38D161CF33536005774CA /* XMGConst.h */,
+				05A38D171CF33536005774CA /* XMGConst.m */,
 			);
 			path = "Other-其它";
 			sourceTree = "<group>";
@@ -552,6 +598,8 @@
 				053E05BD1CE4D2180090E949 /* UIView+YCExtensiom.h */,
 				053E05BE1CE4D2180090E949 /* UIView+YCExtensiom.m */,
 				0596D5871CE7108D0020FD32 /* Foundation+Log.m */,
+				05A38D211CF3373D005774CA /* NSDate+XMGExtension.h */,
+				05A38D221CF3373D005774CA /* NSDate+XMGExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1021,6 +1069,7 @@
 				0593F6221CEF4B4C00EB19BA /* YCPushGuideView.xib in Resources */,
 				058517E31CE7017600594648 /* YCFriendTrendsViewController.xib in Resources */,
 				0596D5901CE718BD0020FD32 /* YCRecommendCategoryCell.xib in Resources */,
+				05A38D201CF33674005774CA /* XMGTopicCell.xib in Resources */,
 				0596D5431CE70D0B0020FD32 /* LICENSE in Resources */,
 				0596D5951CE738060020FD32 /* YCRecommendUserCell.xib in Resources */,
 				05DC40BB1CDDC29300E24CDA /* Assets.xcassets in Resources */,
@@ -1037,9 +1086,11 @@
 			files = (
 				0596D5781CE70D0B0020FD32 /* UIImage+GIF.m in Sources */,
 				0596D54C1CE70D0B0020FD32 /* View+MASAdditions.m in Sources */,
+				05A38D141CF332EC005774CA /* XMGVoiceViewController.m in Sources */,
 				0596D55E1CE70D0B0020FD32 /* MJRefreshAutoGifFooter.m in Sources */,
 				0596D5941CE738060020FD32 /* YCRecommendUserCell.m in Sources */,
 				0596D53D1CE70D0B0020FD32 /* UIAlertView+AFNetworking.m in Sources */,
+				05A38D1B1CF33636005774CA /* XMGTopic.m in Sources */,
 				0596D53F1CE70D0B0020FD32 /* UIImageView+AFNetworking.m in Sources */,
 				0596D5741CE70D0B0020FD32 /* SDWebImageDownloaderOperation.m in Sources */,
 				0596D53E1CE70D0B0020FD32 /* UIButton+AFNetworking.m in Sources */,
@@ -1055,6 +1106,8 @@
 				0596D55D1CE70D0B0020FD32 /* MJRefreshHeader.m in Sources */,
 				0596D5461CE70D0B0020FD32 /* MASConstraintMaker.m in Sources */,
 				0596D5771CE70D0B0020FD32 /* UIButton+WebCache.m in Sources */,
+				05A38D231CF3373D005774CA /* NSDate+XMGExtension.m in Sources */,
+				05A38D121CF332EC005774CA /* XMGPictureViewController.m in Sources */,
 				0596D55F1CE70D0B0020FD32 /* MJRefreshAutoNormalFooter.m in Sources */,
 				058517DE1CE6D9CD00594648 /* YCNavigationController.m in Sources */,
 				0596D57A1CE70D0B0020FD32 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1065,6 +1118,7 @@
 				0596D5471CE70D0B0020FD32 /* MASLayoutConstraint.m in Sources */,
 				0596D5811CE70D0B0020FD32 /* SVProgressHUD.m in Sources */,
 				053E05C81CE4D2180090E949 /* YCFriendTrendsViewController.m in Sources */,
+				05A38D131CF332EC005774CA /* XMGVideoViewController.m in Sources */,
 				0596D5981CE73C6F0020FD32 /* YCRecommendUser.m in Sources */,
 				0596D53A1CE70D0B0020FD32 /* README.md in Sources */,
 				0596D5621CE70D0B0020FD32 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -1081,11 +1135,14 @@
 				0596D5791CE70D0B0020FD32 /* UIImage+MultiFormat.m in Sources */,
 				0596D5691CE70D0B0020FD32 /* UIScrollView+MJExtension.m in Sources */,
 				0596D5321CE70D0B0020FD32 /* AFHTTPSessionManager.m in Sources */,
+				05A38D1F1CF33674005774CA /* XMGTopicCell.m in Sources */,
 				0596D56B1CE70D0B0020FD32 /* UIView+MJExtension.m in Sources */,
 				0593F6201CEF4B1A00EB19BA /* YCPushGuideView.m in Sources */,
 				053E05CE1CE4D2180090E949 /* YCTabBarController.m in Sources */,
 				0596D5331CE70D0B0020FD32 /* AFNetworkReachabilityManager.m in Sources */,
+				05A38D151CF332EC005774CA /* XMGWordViewController.m in Sources */,
 				0596D5591CE70D0B0020FD32 /* MJRefreshAutoFooter.m in Sources */,
+				05A38D111CF332EC005774CA /* XMGAllViewController.m in Sources */,
 				053E05C71CE4D2180090E949 /* YCEssenceViewController.m in Sources */,
 				0596D57C1CE70D0B0020FD32 /* UIView+WebCacheOperation.m in Sources */,
 				0596D5371CE70D0B0020FD32 /* AFURLResponseSerialization.m in Sources */,
@@ -1126,6 +1183,7 @@
 				053E05CF1CE4D2180090E949 /* main.m in Sources */,
 				0596D54B1CE70D0B0020FD32 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				0596D56E1CE70D0B0020FD32 /* README.md in Sources */,
+				05A38D181CF33536005774CA /* XMGConst.m in Sources */,
 				051B04021CE894E9000461DF /* YCRecommendTag.m in Sources */,
 				0596D5681CE70D0B0020FD32 /* MJRefreshConst.m in Sources */,
 				053E05CB1CE4D2180090E949 /* AppDelegate.m in Sources */,

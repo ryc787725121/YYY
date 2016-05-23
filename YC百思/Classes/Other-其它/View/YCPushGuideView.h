@@ -12,4 +12,5 @@
 
 + (instancetype)guideView;
 
++ (void)show;
 @end
