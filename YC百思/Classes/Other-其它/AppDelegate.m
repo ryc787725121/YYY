@@ -32,9 +32,11 @@
     YCLog(@"%@",[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]);
     
     
+
     
     // 显示推送引导
     [YCPushGuideView show];
+
     
     
     return YES;
