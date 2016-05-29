@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 小码哥. All rights reserved.
 //
 
-#import "XMGWordViewController.h"
+#import "YCTopicViewController.h"
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "XMGTopic.h"
@@ -14,7 +14,7 @@
 #import "MJRefresh.h"
 #import "XMGTopicCell.h"
 
-@interface XMGWordViewController ()
+@interface YCTopicViewController ()
 /** 帖子数据 */
 @property (nonatomic, strong) NSMutableArray *topics;
 /** 当前页码 */
@@ -25,7 +25,7 @@
 @property (nonatomic, strong) NSDictionary *params;
 @end
 
-@implementation XMGWordViewController
+@implementation YCTopicViewController
 
 - (NSMutableArray *)topics
 {
@@ -85,13 +85,13 @@ static NSString * const XMGTopicCellId = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"29";
+    params[@"type"] = @(self.type);
     self.params = params;
     
     // 发送请求
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, NSDictionary *responseObject) {
         if (self.params != params) return;
-        
+
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
         
@@ -131,7 +131,7 @@ static NSString * const XMGTopicCellId = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"29";
+    params[@"type"] = @(self.type);
     NSInteger page = self.page + 1;
     params[@"page"] = @(page);
     params[@"maxtime"] = self.maxtime;
@@ -141,6 +141,8 @@ static NSString * const XMGTopicCellId = @"topic";
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, NSDictionary *responseObject) {
         if (self.params != params) return;
         
+        
+
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
         
@@ -173,6 +175,7 @@ static NSString * const XMGTopicCellId = @"topic";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     XMGTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:XMGTopicCellId];
     
+    // 拿出对应的cell ，展示cell的内容
     cell.topic = self.topics[indexPath.row];
     
     return cell;
@@ -181,7 +184,13 @@ static NSString * const XMGTopicCellId = @"topic";
 #pragma mark - 代理方法
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200;
+    // 取出对应的帖子模型，显示cell模型的高度
+    XMGTopic *topic = self.topics[indexPath.row];
+    // 这里一个模型对应一个cell高度
+    
+    // 返回这个模型对应的cell的高度
+    return topic.cellHeight;
 }
+
 
 @end

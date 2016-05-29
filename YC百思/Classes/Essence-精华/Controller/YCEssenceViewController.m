@@ -8,11 +8,7 @@
 
 #import "YCEssenceViewController.h"
 #import "YCRecommendTagsViewController.h"
-#import "XMGAllViewController.h"
-#import "XMGVideoViewController.h"
-#import "XMGVoiceViewController.h"
-#import "XMGPictureViewController.h"
-#import "XMGWordViewController.h"
+#import "YCTopicViewController.h"
 @interface YCEssenceViewController () <UIScrollViewDelegate>
 
 /** 标签栏底部的红色指示器 */
@@ -54,24 +50,33 @@
  */
 - (void)setupChildVces
 {
-    XMGWordViewController *word = [[XMGWordViewController alloc] init];
-    word.title = @"段子";
-    [self addChildViewController:word];
     
-    XMGAllViewController *all = [[XMGAllViewController alloc] init];
-    all.title = @"全部";
-    [self addChildViewController:all];
-    
-    XMGPictureViewController *picture = [[XMGPictureViewController alloc] init];
+    YCTopicViewController *picture = [[YCTopicViewController alloc] init];
     picture.title = @"图片";
+    picture.type = YCTopicTypePicture;
     [self addChildViewController:picture];
     
-    XMGVideoViewController *video = [[XMGVideoViewController alloc] init];
+    
+    YCTopicViewController *word = [[YCTopicViewController alloc] init];
+    word.title = @"段子";
+    word.type = YCTopicTypeWord;
+    [self addChildViewController:word];
+    
+    YCTopicViewController *all = [[YCTopicViewController alloc] init];
+    all.title = @"全部";
+    all.type = YCTopicTypeAll;
+    [self addChildViewController:all];
+    
+    
+    
+    YCTopicViewController *video = [[YCTopicViewController alloc] init];
     video.title = @"视频";
+    video.type = YCTopicTypeVideo;
     [self addChildViewController:video];
     
-    XMGVoiceViewController *voice = [[XMGVoiceViewController alloc] init];
+    YCTopicViewController *voice = [[YCTopicViewController alloc] init];
     voice.title = @"声音";
+    voice.type = YCTopicTypeVoice;
     [self addChildViewController:voice];
 }
 

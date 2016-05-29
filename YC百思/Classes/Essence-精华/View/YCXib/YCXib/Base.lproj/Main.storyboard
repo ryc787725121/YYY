@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMP-ka-aDR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXf-11-Cke">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="lvL-QW-Q7a"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="lvL-QW-Q7a"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <exclude reference="lvL-QW-Q7a"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40672485515685153" green="1" blue="0.19932834960568546" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cXf-11-Cke" firstAttribute="height" secondItem="RMP-ka-aDR" secondAttribute="height" multiplier="2" id="602-Lh-syG"/>
+                                    <constraint firstAttribute="bottom" secondItem="cXf-11-Cke" secondAttribute="bottom" constant="36" id="BT0-qW-vh3"/>
+                                    <constraint firstItem="cXf-11-Cke" firstAttribute="top" secondItem="RMP-ka-aDR" secondAttribute="top" id="HfV-6s-iUZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="cXf-11-Cke" secondAttribute="trailing" id="LkC-hw-Ga4"/>
+                                    <constraint firstItem="cXf-11-Cke" firstAttribute="width" secondItem="RMP-ka-aDR" secondAttribute="width" multiplier="2" id="SnF-t5-TFq"/>
+                                    <constraint firstItem="cXf-11-Cke" firstAttribute="leading" secondItem="RMP-ka-aDR" secondAttribute="leading" id="bfe-qd-1Hu"/>
+                                    <constraint firstAttribute="height" constant="200" id="dJw-xZ-i1N"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="cXf-11-Cke"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="dJw-xZ-i1N"/>
+                                        <exclude reference="602-Lh-syG"/>
+                                        <exclude reference="BT0-qW-vh3"/>
+                                        <exclude reference="HfV-6s-iUZ"/>
+                                        <exclude reference="LkC-hw-Ga4"/>
+                                        <exclude reference="SnF-t5-TFq"/>
+                                        <exclude reference="bfe-qd-1Hu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="cXf-11-Cke"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="dJw-xZ-i1N"/>
+                                        <include reference="602-Lh-syG"/>
+                                        <include reference="BT0-qW-vh3"/>
+                                        <include reference="HfV-6s-iUZ"/>
+                                        <include reference="LkC-hw-Ga4"/>
+                                        <include reference="SnF-t5-TFq"/>
+                                        <include reference="bfe-qd-1Hu"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RMP-ka-aDR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="23k-kb-9BC"/>
+                            <constraint firstAttribute="trailing" secondItem="RMP-ka-aDR" secondAttribute="trailing" id="Frw-iU-8WD"/>
+                            <constraint firstItem="RMP-ka-aDR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="clD-Gk-1N7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RMP-ka-aDR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="23k-kb-9BC"/>
+                                <exclude reference="Frw-iU-8WD"/>
+                                <exclude reference="clD-Gk-1N7"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="RMP-ka-aDR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="23k-kb-9BC"/>
+                                <include reference="Frw-iU-8WD"/>
+                                <include reference="clD-Gk-1N7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

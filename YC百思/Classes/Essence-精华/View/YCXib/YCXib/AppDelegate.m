@@ -1,14 +1,12 @@
 //
 //  AppDelegate.m
-//  YC百思
+//  YCXib
 //
-//  Created by 任任义春 on 16/5/7.
+//  Created by 任任义春 on 16/5/26.
 //  Copyright © 2016年 renyihcun. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "YCTabBarController.h"
-#import "YCPushGuideView.h"
 
 @interface AppDelegate ()
 
@@ -18,28 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // 创建窗口
-    self.window = [[UIWindow alloc] init];
-    self.window.frame = [UIScreen mainScreen].bounds;
-    
-    // 设置窗口的根控制器
-    self.window.rootViewController = [[YCTabBarController alloc] init];
-    
-    // 显示窗口
-    [self.window makeKeyAndVisible];
-    
-    // 显示引导图
-    
-    YCLog(@"%@",[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]);
-    
-    
-
-    
-    // 显示推送引导
-    [YCPushGuideView show];
-
-    
-    
+    // Override point for customization after application launch.
     return YES;
 }
 

@@ -17,7 +17,7 @@
  */
 
 /** id*/
-@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, assign) NSInteger ID;
 /** 名字 */
 @property (nonatomic, copy) NSString *name;
 /** 总数 */

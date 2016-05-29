@@ -7,8 +7,15 @@
 //
 
 #import "YCRecommendCategory.h"
-
+#import "MJExtension.h"
 @implementation YCRecommendCategory
+
++ (NSDictionary *)replacedKeyFromPropertyName {
+
+
+    return @{@"ID" : @"id"};
+
+}
 
 - (NSMutableArray *)users {
     if (_users == nil) {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="257"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="256.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YzR-bq-haB" userLabel="头像">
@@ -21,13 +22,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tk6-IU-6gJ" userLabel="昵称">
-                        <rect key="frame" x="55" y="10" width="38" height="18"/>
+                        <rect key="frame" x="55" y="10" width="37.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkS-ey-sXu" userLabel="时间">
-                        <rect key="frame" x="55" y="30" width="31" height="15"/>
+                        <rect key="frame" x="55" y="30" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -143,19 +144,37 @@
                             <constraint firstAttribute="trailing" secondItem="y1Y-Om-KR7" secondAttribute="trailing" id="qpX-i9-Z9I"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_AddV_authen" translatesAutoresizingMaskIntoConstraints="NO" id="24u-R2-NdQ" userLabel="加V图标">
+                        <rect key="frame" x="36" y="36" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="DnI-gZ-bFa"/>
+                            <constraint firstAttribute="width" constant="14" id="OTD-aI-wFs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3k-OK-WyH">
+                        <rect key="frame" x="10" y="55" width="300" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="bmm-s8-QVI" firstAttribute="top" secondItem="tk6-IU-6gJ" secondAttribute="top" id="5Ti-qC-nKd"/>
                     <constraint firstItem="EkS-ey-sXu" firstAttribute="bottom" secondItem="YzR-bq-haB" secondAttribute="bottom" id="6vt-Vd-Yjq"/>
                     <constraint firstItem="YzR-bq-haB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9nQ-LC-gLG"/>
                     <constraint firstItem="tk6-IU-6gJ" firstAttribute="leading" secondItem="YzR-bq-haB" secondAttribute="trailing" constant="10" id="ENl-Pa-R3N"/>
+                    <constraint firstItem="24u-R2-NdQ" firstAttribute="bottom" secondItem="YzR-bq-haB" secondAttribute="bottom" constant="5" id="FDX-MB-mxQ"/>
+                    <constraint firstItem="24u-R2-NdQ" firstAttribute="trailing" secondItem="YzR-bq-haB" secondAttribute="trailing" constant="5" id="FXl-LB-nfa"/>
                     <constraint firstItem="EkS-ey-sXu" firstAttribute="leading" secondItem="tk6-IU-6gJ" secondAttribute="leading" id="Krv-ZL-65R"/>
                     <constraint firstItem="Bzh-fm-aB8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rs4-nP-MJM"/>
                     <constraint firstAttribute="trailing" secondItem="Bzh-fm-aB8" secondAttribute="trailing" id="Tpy-9c-7Ty"/>
                     <constraint firstAttribute="trailing" secondItem="bmm-s8-QVI" secondAttribute="trailing" constant="10" id="VWr-sg-crc"/>
+                    <constraint firstItem="K3k-OK-WyH" firstAttribute="top" secondItem="YzR-bq-haB" secondAttribute="bottom" constant="10" id="gtM-lN-7kc"/>
                     <constraint firstItem="YzR-bq-haB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gxG-A6-xHX"/>
                     <constraint firstItem="YzR-bq-haB" firstAttribute="top" secondItem="tk6-IU-6gJ" secondAttribute="top" id="iYJ-dv-BYg"/>
+                    <constraint firstItem="K3k-OK-WyH" firstAttribute="trailing" secondItem="bmm-s8-QVI" secondAttribute="trailing" id="j27-97-ExJ"/>
                     <constraint firstAttribute="bottom" secondItem="Bzh-fm-aB8" secondAttribute="bottom" id="nwf-2j-Bhw"/>
+                    <constraint firstItem="K3k-OK-WyH" firstAttribute="leading" secondItem="YzR-bq-haB" secondAttribute="leading" id="vO0-BB-CJi"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -166,11 +185,14 @@
                 <outlet property="nameLabel" destination="tk6-IU-6gJ" id="qUi-Da-xwO"/>
                 <outlet property="profileImageView" destination="YzR-bq-haB" id="47R-oK-idn"/>
                 <outlet property="shareButton" destination="Lhm-Tk-Zwz" id="YZC-rw-CBh"/>
+                <outlet property="sinaVViem" destination="24u-R2-NdQ" id="qND-CG-5IA"/>
+                <outlet property="text_label" destination="K3k-OK-WyH" id="hut-vN-V75"/>
             </connections>
             <point key="canvasLocation" x="354" y="331.5"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Profile_AddV_authen" width="14" height="14"/>
         <image name="cell-button-line" width="1" height="29"/>
         <image name="cell-content-line" width="299" height="1"/>
         <image name="cellFollowClickIcon" width="19" height="20"/>

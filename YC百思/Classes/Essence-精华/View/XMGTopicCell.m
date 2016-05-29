@@ -9,7 +9,7 @@
 #import "XMGTopicCell.h"
 #import "XMGTopic.h"
 #import "UIImageView+WebCache.h"
-
+#import "YCPoticPictureView.h"
 @interface XMGTopicCell()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -25,10 +25,29 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 /** 评论 */
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
+/** 新浪加v用户 */
+@property (weak, nonatomic) IBOutlet UIImageView *sinaVViem;
+
+/**  帖子的文字内容 */
+@property (weak, nonatomic) IBOutlet UILabel *text_label;
+
+/** 图片帖子中间的内容 */
+@property (nonatomic, strong) YCPoticPictureView *pictureView;
+
 
 @end
 
 @implementation XMGTopicCell
+/** 图片帖子中间的内容 */
+- (YCPoticPictureView *)pictureView {
+    if (!_pictureView) {
+        _pictureView = [YCPoticPictureView pictureView];
+        [self.contentView addSubview:_pictureView];
+    }
+
+    return _pictureView;
+}
+
 
 - (void)awakeFromNib
 {
@@ -59,20 +78,42 @@
 {
     _topic = topic;
     
+    // 随机产生0或1
+//    topic.sina_v = arc4random_uniform(100) % 2;
+    
+     // 新浪加V
+    self.sinaVViem.hidden = !topic.sina_v;
+    
+    
     // 设置头像
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     
     // 设置名字
     self.nameLabel.text = topic.name;
     
-    // 设置帖子的创建时间
-    self.createTimeLabel.text = topic.create_time;
     
+   // 设置贴的的发布时间
+    self.createTimeLabel.text = topic.create_time;
     // 设置按钮文字
     [self setupButtonTitle:self.dingButton count:topic.ding placeholder:@"顶"];
     [self setupButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
+    
+    
+    // 设置帖子的文字内容
+    self.text_label.text = topic.text;
+    
+    
+    // 根据帖子类型，添加对应的内容到cell的中间
+    if (topic.type == YCTopicTypePicture) { // 图片帖子
+        
+        self.pictureView.topic = topic;
+        self.pictureView.frame = topic.pictureViewFrame;
+    }
+    
+    
+    
 }
 
 /**
@@ -89,15 +130,17 @@
 }
 
 - (void)setFrame:(CGRect)frame
-{
-    static CGFloat margin = 10;
+{ 
     
-    frame.origin.x = margin;
-    frame.size.width -= 2 * margin;
-    frame.size.height -= margin;
-    frame.origin.y += margin;
+    frame.origin.x = YCTopicCellMargin;
+    frame.size.width -= 2 * YCTopicCellMargin;
+    frame.size.height -= YCTopicCellMargin;
+    frame.origin.y += YCTopicCellMargin;
     
     [super setFrame:frame];
 }
+
+
+
 
 @end
